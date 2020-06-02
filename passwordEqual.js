@@ -5,4 +5,4 @@ function validate(password, value) {
   return value ? password === value : true;
 }
 
-export default password => value => validate(password, value) || message;
+export default (password) => (value) => validate(password, value) || message;

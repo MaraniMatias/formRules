@@ -1,4 +1,4 @@
-const message = "El campo solo puede tener numero.";
+const message = "El campo solo puede tener número.";
 
 function validate(value) {
   // Valid required with required rule
@@ -6,4 +6,4 @@ function validate(value) {
   return /^[0-9]+$/.test(String(value));
 }
 
-export default () => value => validate(value) || message;
+export default () => (value) => validate(value) || message;

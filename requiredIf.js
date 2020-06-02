@@ -8,4 +8,4 @@ function validate(value) {
   return !!String(value).trim().length;
 }
 
-export default required_if => value => (required_if ? validate(value) || message : true);
+export default (required_if) => (value) => (required_if ? validate(value) || message : true);

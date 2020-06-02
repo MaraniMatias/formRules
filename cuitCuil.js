@@ -1,5 +1,5 @@
 const regexp = /^(?:20|23|24|27|30|33|34)(?:\D)?[0-9]{8}(?:\D)?[0-9]$/;
-const message = "Cuil o cuit invalido";
+const message = "Cuil o cuit invalido.";
 
 function validate(value) {
   // Valid required with required rule
@@ -26,4 +26,4 @@ function validate(value) {
   return false;
 }
 
-export default () => value => validate(value) || message;
+export default () => (value) => validate(value) || message;

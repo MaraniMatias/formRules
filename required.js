@@ -8,4 +8,4 @@ function validate(value) {
   return !!String(value).trim().length;
 }
 
-export default () => value => validate(value) || message;
+export default () => (value) => validate(value) || message;

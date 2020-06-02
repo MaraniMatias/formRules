@@ -8,4 +8,4 @@ function validate(value) {
   return cashValid.test(String(value));
 }
 
-export default () => value => validate(value) || message;
+export default () => (value) => validate(value) || message;

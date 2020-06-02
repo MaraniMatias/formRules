@@ -10,4 +10,4 @@ function validate(value) {
   return passwordValid.test(value);
 }
 
-export default () => value => validate(value) || message;
+export default () => (value) => validate(value) || message;

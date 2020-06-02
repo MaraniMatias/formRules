@@ -6,4 +6,4 @@ function validate(val) {
   return reg.test(String(val));
 }
 
-export default () => value => validate(value) || message;
+export default () => (value) => validate(value) || message;

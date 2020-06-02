@@ -14,11 +14,10 @@ import decimal from "./decimal";
 import page_intervals from "./pageIntervals";
 import password from "./password";
 import password_equal from "./passwordEqual";
-// import phone_number from "./phoneNumber";
+import phone_number from "./phoneNumber";
 import required from "./required";
 import required_if from "./requiredIf";
 import cuit_cuil from "./cuitCuil";
-import latitude_longitude from "./latitudeLongitude";
 import { between, max, min } from "./lengthRules";
 
 export default {
@@ -36,9 +35,8 @@ export default {
   numeric,
   page_intervals,
   password,
-  // phone_number,
+  phone_number,
   password_equal,
   required,
   required_if,
-  latitude_longitude
 };
