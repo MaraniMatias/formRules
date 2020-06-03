@@ -19,7 +19,8 @@
     "libphonenumber-js": "^1.7.52"
   },
   "lint-staged": {
-    "*.{js}": "npm run lint && npm run test"
+    "*.js": "npm run lint",
+    "*.spec.js": "npm run test"
   },
   "husky": {
     "hooks": {
