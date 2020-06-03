@@ -26,3 +26,4 @@ module.exports.phone_number = require("./phoneNumber");
 module.exports.required = require("./required");
 module.exports.required_if = require("./requiredIf");
 module.exports.cuit_cuil = require("./cuitCuil");
+module.exports.latitude_longitude = require("./latitudeLongitude");
