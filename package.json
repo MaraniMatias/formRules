@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "main": "./src/index.js",
-  "types": "./src/index.d.ts",
+  "module":"./src/index.js",
   "scripts": {
     "lint": "eslint --ext .js --ignore-path .gitignore .",
     "test": "npx mocha test/unit/**/*.spec.js",
