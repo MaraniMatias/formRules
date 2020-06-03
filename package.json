@@ -4,7 +4,10 @@
   "private": true,
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint --ext .js --ignore-path .gitignore .",
+    "eslint": "npx eslint src/**/*.js"
+  },
   "description": "Simple validate text",
   "repository": {
     "type": "git",
@@ -14,12 +17,22 @@
   "dependencies": {
     "libphonenumber-js": "^1.7.52"
   },
+  "lint-staged": {
+    "*.{js}": "npm run lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "devDependencies": {
     "@types/node": "^14.0.6",
     "eslint": "^7.1.0",
+    "eslint-config-prettier": "^6.10.0",
     "eslint-formatter-git-log": "^0.5.3",
     "eslint-plugin-prettier": "^3.1.3",
-    "eslint-plugin-simple-import-sort": "^5.0.3",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.7",
     "prettier": "^2.0.5"
   },
   "engines": {
