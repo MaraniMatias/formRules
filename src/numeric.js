@@ -6,4 +6,4 @@ function validate(value) {
   return /^[0-9]+$/.test(String(value));
 }
 
-export default () => (value) => validate(value) || message;
+module.exports = () => (value) => validate(value) || message;

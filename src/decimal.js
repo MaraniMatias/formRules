@@ -8,4 +8,4 @@ function validate(decimalDigit = "1,2", value) {
   return re.test(String(value));
 }
 
-export default (decimalDigit) => (value) => validate(decimalDigit, value) || message;
+module.exports = (decimalDigit) => (value) => validate(decimalDigit, value) || message;

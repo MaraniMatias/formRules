@@ -6,4 +6,4 @@ const alphaSpaces = {
 
 const message = "El campo solo puede tener letras.";
 
-export default (locale = "es") => (value) => alphaSpaces[locale].test(value) || message;
+module.exports = (locale = "es") => (value) => alphaSpaces[locale].test(value) || message;

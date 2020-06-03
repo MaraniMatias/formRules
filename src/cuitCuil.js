@@ -26,4 +26,4 @@ function validate(value) {
   return false;
 }
 
-export default () => (value) => validate(value) || message;
+module.exports = () => (value) => validate(value) || message;

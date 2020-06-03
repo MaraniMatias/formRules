@@ -3,24 +3,23 @@
 // https://github.com/validatorjs/validator.js
 // import isLength from "validator/lib/isLength";
 
-module.export. alpha_num =require( "./alphaNum");
-module.export. alpha_spaces =require( "./alphaSpaces");
-module.export. alpha_spaces_num_lodash =require("./alphaSpacesNumLodash");
-module.export. cash =require( "./cash");
-module.export. email =require( "./email");
-module.export. lapsetext =require("./lapsetext");
-module.export. numeric =require( "./numeric");
-module.export. decimal =require( "./decimal");
-module.export. page_intervals =require( "./pageIntervals");
-module.export. password =require("./password");
-module.export. password_equal =require( "./passwordEqual");
-module.export. phone_number =require("./phoneNumber");
-module.export. required =require("./required");
-module.export. required_if =require("./requiredIf");
-module.export. cuit_cuil =require( "./cuitCuil");
+module.exports.alpha_num = require("./alphaNum");
+module.exports.alpha_spaces = require("./alphaSpaces");
+module.exports.alpha_spaces_num_lodash = require("./alphaSpacesNumLodash");
+module.exports.cash = require("./cash");
+module.exports.email = require("./email");
+module.exports.lapsetext = require("./lapsetext");
+module.exports.numeric = require("./numeric");
+module.exports.decimal = require("./decimal");
+module.exports.page_intervals = require("./pageIntervals");
+module.exports.password = require("./password");
+module.exports.password_equal = require("./passwordEqual");
+module.exports.phone_number = require("./phoneNumber");
+module.exports.required = require("./required");
+module.exports.required_if = require("./requiredIf");
+module.exports.cuit_cuil = require("./cuitCuil");
 
-const { between, max, min } =require("./lengthRules");
-module.export.between = between
-module.export.max = max
-module.export.min= min
-
+const { between, max, min } = require("./lengthRules");
+module.exports.between = between;
+module.exports.max = max;
+module.exports.min = min;

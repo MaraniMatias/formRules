@@ -1,4 +1,4 @@
-import { isNullOrUndefined, isEmptyArray } from "./utils";
+const { isNullOrUndefined, isEmptyArray } = require("./utils");
 
 const message = "El campo es obligatorio.";
 
@@ -8,4 +8,4 @@ function validate(value) {
   return !!String(value).trim().length;
 }
 
-export default (required_if) => (value) => (required_if ? validate(value) || message : true);
+module.exports = (required_if) => (value) => (required_if ? validate(value) || message : true);

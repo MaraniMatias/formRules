@@ -5,5 +5,5 @@ const alphaNumeric = {
 };
 const defaultMessage = "El campo solo puede tener letras y numeros.";
 
-export default ({ locale, message } = {}) => (value) =>
+module.exports = ({ locale, message } = {}) => (value) =>
   alphaNumeric[locale || "es"].test(value) || message || defaultMessage;

@@ -1,4 +1,4 @@
-import { parsePhoneNumberFromString, getCountryCallingCode } from "libphonenumber-js";
+const { parsePhoneNumberFromString, getCountryCallingCode } = require("libphonenumber-js");
 
 const message = "El número no parece ser válido.";
 
@@ -9,7 +9,7 @@ function validate(value) {
   return phoneNumber.isValid && phoneNumber.isValid();
 }
 
-export default function (county = "AR") {
+module.exports = function (county = "AR") {
   const countyCode = getCountryCallingCode(county);
   return function (value) {
     const phoneNumber = countyCode + value;
@@ -17,4 +17,4 @@ export default function (county = "AR") {
     if (!value) return true;
     return (/^\+?\d+$/.test(value) && validate(phoneNumber)) || message;
   };
-}
+};

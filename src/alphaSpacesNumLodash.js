@@ -5,5 +5,4 @@ function validate(val) {
 
   return reg.test(String(val));
 }
-
-export default () => (value) => validate(value) || message;
+module.exports = () => (value) => validate(value) || message;
