@@ -1,9 +1,9 @@
 {
   "name": "form-rules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "main": "./src/index.js",
-  "module":"./src/index.js",
+  "module": "./src/index.js",
   "scripts": {
     "lint": "eslint --ext .js --ignore-path .gitignore .",
     "test": "npx mocha test/unit/**/*.spec.js",
