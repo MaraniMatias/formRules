@@ -7,4 +7,7 @@ function validate(value) {
   return re.test(String(value))
 }
 
-export default () => (value) => validate(value) || message
+/**
+ * Check for mongo objectId string
+ */
+module.exports = () => (value) => validate(value) || message
