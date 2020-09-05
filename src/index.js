@@ -27,4 +27,4 @@ module.exports.required = require("./required");
 module.exports.required_if = require("./requiredIf");
 module.exports.cuit_cuil = require("./cuitCuil");
 module.exports.latitude_longitude = require("./latitudeLongitude");
-module.exports.objectId = require("./objectId");
+module.exports.object_id = require("./objectId");

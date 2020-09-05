@@ -1,4 +1,7 @@
-const { parsePhoneNumberFromString, getCountryCallingCode } = require("libphonenumber-js");
+const {
+  parsePhoneNumberFromString,
+  getCountryCallingCode,
+} = require("libphonenumber-js");
 
 const message = "El número no parece ser válido.";
 

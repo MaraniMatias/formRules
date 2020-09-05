@@ -2,11 +2,13 @@ function validateBetween(value, min, max) {
   // Valid only number, not if field is required
   if (!value) return true;
   return (
-    (Number(min) <= String(value).length && Number(max) >= String(value).length) ||
+    (Number(min) <= String(value).length &&
+      Number(max) >= String(value).length) ||
     `Longitud validad de ${min} a ${max}.`
   );
 }
-module.exports.between = ({ min, max }) => (value) => validateBetween(value, min, max);
+module.exports.between = ({ min, max }) => (value) =>
+  validateBetween(value, min, max);
 
 function validateMin(value, length) {
   // Valid only number, not if field is required

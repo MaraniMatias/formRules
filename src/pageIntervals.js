@@ -21,4 +21,5 @@ function validate(value, countPage = 1) {
 
 // export default (value, { params = [], message = message }) =>
 //   validate(value, ...params) || message;
-module.exports = (countPage) => (value) => validate(value, countPage) || message;
+module.exports = (countPage) => (value) =>
+  validate(value, countPage) || message;

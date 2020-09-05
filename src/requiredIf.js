@@ -8,4 +8,5 @@ function validate(value) {
   return !!String(value).trim().length;
 }
 
-module.exports = (required_if) => (value) => (required_if ? validate(value) || message : true);
+module.exports = (required_if) => (value) =>
+  required_if ? validate(value) || message : true;
