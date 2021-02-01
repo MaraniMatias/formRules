@@ -1,4 +1,4 @@
-const message = "El campo invalido.";
+const message = "El campo inválido.";
 const re = /^(?=[a-f\d]{24}$)(\d+[a-f]|[a-f]+\d)/i;
 
 /**
