@@ -1,4 +1,4 @@
-const message = "Characteres invalidos.";
+const message = "Caracteres inválidos.";
 
 function validate(val) {
   // eslint-disable-next-line
