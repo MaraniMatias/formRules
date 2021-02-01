@@ -4,7 +4,7 @@ const alphaSpaces = {
   // pt: /^[A-ZÃÁÀÂÇÉÊÍÕÓÔÚÜ\s]*$/i
 };
 
-const message = "El campo solo puede tener letras.";
+const message = "El campo sólo puede tener letras.";
 
 module.exports = (locale = "es") => (value) =>
   alphaSpaces[locale].test(value) || message;
