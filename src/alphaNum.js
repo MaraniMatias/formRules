@@ -3,7 +3,7 @@ const alphaNumeric = {
   es: /^[0-9A-ZÁÉÍÑÓÚÜ]*$/i,
   // pt: /^[0-9A-ZÃÁÀÂÇÉÊÍÕÓÔÚÜ]*$/i
 };
-const defaultMessage = "El campo solo puede tener letras y numeros.";
+const defaultMessage = "El campo sólo puede tener letras y números.";
 
 /**
  * Check for alpha numeric string
