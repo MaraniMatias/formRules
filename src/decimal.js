@@ -1,4 +1,4 @@
-const message = "El campo invalido.";
+const message = "El campo inválido.";
 
 function validate(decimalDigit = "1,2", value) {
   // console.log(decimalDigit);
